@@ -8,16 +8,35 @@
     "start": "vite",
     "build": "vite build",
     "deploy": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile:sass": "sass --watch scss:assets/css"
   },
   "devDependencies": {
     "glob": "^7.2.0",
-    "sass": "^1.93.2",
+    "sass": "^1.94.2",
     "vite": "^7.1.7"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1"
-  }
+  },
+  "description": "Learning bootstrap v5 with sass",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WSU-SoC-WEB2890-CU/web2890-review-assignment-AJSpicknall.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "bugs": {
+    "url": "https://github.com/WSU-SoC-WEB2890-CU/web2890-review-assignment-AJSpicknall/issues"
+  },
+  "homepage": "https://github.com/WSU-SoC-WEB2890-CU/web2890-review-assignment-AJSpicknall#readme"
 }

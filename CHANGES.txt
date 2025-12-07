@@ -1,1 +1,12 @@
-TODO: List here all the changes you made to given template to adapt it to your needs
+1) Rebranded the page title, meta description, navbar links, and phone CTA to reflect AJ Spicknall’s UX portfolio and anchor to real sections (improves SEO and navigation clarity).
+2) Swapped the palette to a crimson → soft red gradient and tinted wave dividers to keep the gradient effect while matching the new brand vibe.
+3) Replaced hero, services, portfolio, and testimonial imagery with new Unsplash assets that fit the crimson theme and UX focus (removes template placeholders).
+4) Rewrote the hero copy and dual CTAs to describe AJ’s work style and drive visitors to the portfolio/contact sections.
+5) Reauthored the services section with actual offerings (custom builds, bug fixing/optimization, API integrations) plus new alt text and visuals.
+6) Added a new “Process” section using cards, badges, and icons to outline discovery → design → build → iterate (new Bootstrap components not in the template).
+7) Added a new “Skills & Tools” section using cards, list-groups, progress bars, and pill badges to showcase capabilities across breakpoints.
+8) Updated the FAQ with real Q&A about process, scheduling, codebase work, and tools for a more authentic voice.
+9) Retitled the companies block to “Tools & platforms I rely on” to better match a personal portfolio while keeping responsive logo grid.
+10) Rewrote portfolio captions into honest concept case studies to replace lorem ipsum.
+11) Refreshed the contact/get-started copy and CTA list to explain how collaboration works and to match the new brand tone.
+12) Updated the footer with real bio, contact info, and live GitHub/LinkedIn links while keeping responsive layout.

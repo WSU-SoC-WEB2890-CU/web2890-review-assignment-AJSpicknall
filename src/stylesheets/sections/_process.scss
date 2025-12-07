@@ -1,0 +1,42 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.process {
+  background: linear-gradient(135deg, rgba($primary, 0.08), rgba($secondary, 0.08));
+  padding: 4rem 0 5rem;
+
+  &__card {
+    background-color: $white;
+    border-left: 0.35rem solid $primary;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 1rem 2rem rgba($black, 0.05);
+
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      background: linear-gradient(120deg, $primary, $secondary);
+    }
+  }
+
+  .process__icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, rgba($primary, 0.15), rgba($secondary, 0.2));
+    color: $primary;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .process__card {
+      padding: 2rem;
+    }
+  }
+}
