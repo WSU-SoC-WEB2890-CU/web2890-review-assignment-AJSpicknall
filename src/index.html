@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Project Starter</title>
+  <title>AJ Spicknall | UX Designer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: A starter project for ...">
-  <title>Bootstrap 5 Landing Page Template</title>
+  <meta name="description" content="Portfolio of AJ Spicknall, UX designer crafting clear, responsive experiences.">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
@@ -18,7 +17,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="logo image">
+        <img src="images/logo.png" class="aj-logo" alt="AJ Spicknall logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,16 +25,18 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <button type="button" class="rounded-pill btn-rounded">
-          801-626-1234
+          385-888-0367
           <span>
             <i class="bi bi-telephone-fill"></i>
           </span>
@@ -50,19 +51,24 @@
       <div class="row align-items-center text-white">
         <div class="col-md-6 intros text-start">
           <h1 class="display-2">
-            <span class="display-2--intro">Welcome!</span>
+            <span class="display-2--intro">AJ Spicknall</span>
             <span class="display-2--description lh-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur libero quod quasi et ex.
+              I am a UX designer who writes clean and maintainable code, and breaks complex problems into workable parts. I prioritize readability, efficiency, and iteration so that every update I do moves the product forward with clarity.
             </span>
           </h1>
-          <button type="button" class="rounded-pill btn-rounded">Get in Touch
-            <span><i class="bi bi-arrow-right"></i></span>
-          </button>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#portfolio" class="rounded-pill btn-rounded text-decoration-none">View my work
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+            <a href="#contact" class="rounded-pill btn-rounded text-decoration-none border border-2 border-white">Start a project
+              <span><i class="bi bi-chat-dots-fill"></i></span>
+            </a>
+          </div>
         </div>
         <div class="col-md-6 intros text-end">
           <div class="video-box">
-            <img src="images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
-            <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+            <img src="images/arts/intro-section-illustration.png" alt="AJ working on UX flows" class="img-fluid shadow-lg rounded-4">
+            <a href="#process" class="glightbox position-absolute top-50 start-50 translate-middle">
               <span>
                 <i class="bi bi-play-circle"></i>
               </span>
@@ -74,8 +80,7 @@
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      <path fill="#fff4f4" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,229.3C384,235,480,181,576,144C672,107,768,85,864,101.3C960,117,1056,171,1152,170.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
     </svg>
   </section>
@@ -84,21 +89,21 @@
   <section id="services" class="services">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold">Our Services</h1>
+        <h1 class="display-3 fw-bold">Services</h1>
         <div class="heading-line mb-1"></div>
       </div>
       <div class="row pt-2 pb-2 mt-0 mb-3">
         <div class="col-md-6 border-right">
           <div class="bg-white p-3">
             <h2 class="fw-bold text-capitalize text-center">
-              Soluta exercitationem voluptatem labore cum necessitatibus temporibus nisi.
+              UX and engineering for responsive, human-centered products.
             </h2>
           </div>
         </div>
         <div class="col-md-6">
           <div class="bg-white p-4 text-start">
             <p class="fw-light">
-              Hello
+              I build experiences that balance clarity and craft: purposeful flows, maintainable interfaces, and thoughtful, data-informed iterations.
             </p>
           </div>
         </div>
@@ -110,9 +115,9 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-send-fill"></div>
-            <h3 class="display-3--title mt-1">Marketing</h3>
+            <h3 class="display-3--title mt-1">Custom Web & App Development</h3>
             <p class="lh-lg">
-              Welcome to my website. This is new.
+              I create responsive, user-friendly experiences tailored to the clients goals, from UX flow to production-ready code that works across devices.
             </p>
             <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
@@ -121,24 +126,22 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
           <div class="services__pic">
-            <img src="images/services/service-1.png" alt="marketing illustration" class="img-fluid">
+            <img src="images/services/service-1.png" alt="Illustration for building digital products" class="img-fluid rounded-3 shadow-sm">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
           <div class="services__pic">
-            <img src="images/services/service-2.png" alt="web development illustration" class="img-fluid">
+            <img src="images/services/service-2.png" alt="Debugging and optimization" class="img-fluid rounded-3 shadow-sm">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-code-slash"></div>
-            <h3 class="display-3--title mt-1">web development</h3>
+            <h3 class="display-3--title mt-1">Bug Fixing & Code Optimization</h3>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-              doloremque autem quibusdam blanditiis harum alias hic accusantium
-              maxime atque ratione magni repellat?
+              I do detailed troubleshooting, uptick in performance, and make sure to keep codebases clean, reliable, and easy to work with.
             </p>
             <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
@@ -150,11 +153,9 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
           <div class="services__content">
             <div class="icon d-block bi bi-cloud-arrow-up"></div>
-            <h3 class="display-3--title mt-1">cloud hosting</h3>
+            <h3 class="display-3--title mt-1">API Integration & Backend Support</h3>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-              doloremque autem quibusdam blanditiis harum alias hic accusantium
-              maxime atque ratione magni repellat?
+              I am able to integrate third-party services, shape data models, and ensuring dependable flows between UI and backend systems.
             </p>
             <button type="button" class="rounded-pill btn-rounded border-primary">Learn more
               <span><i class="bi bi-arrow-right"></i></span>
@@ -163,18 +164,87 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
           <div class="services__pic">
-            <img src="images/services/service-3.png" alt="cloud hosting illustration" class="img-fluid">
+            <img src="images/services/service-3.png" alt="API integration diagrams" class="img-fluid rounded-3 shadow-sm">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- THE CAMPANIES SECTION -->
+  <!-- THE PROCESS SECTION -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Process</h1>
+        <div class="heading-line mb-1"></div>
+        <p class="lead">Structured, transparent steps from discovery to delivery.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pt-4">
+        <div class="col">
+          <div class="process__card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <div class="process__icon me-3">
+                <i class="bi bi-search"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Discover</h5>
+                <span class="badge text-white">01</span>
+              </div>
+            </div>
+            <p class="mb-0">I can clarify goals, constraints, and users. Translate requirements into problem statements and success metrics.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="process__card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <div class="process__icon me-3">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Design</h5>
+                <span class="badge text-white">02</span>
+              </div>
+            </div>
+            <p class="mb-0">I will create map flows, wireframes, and validate with stakeholders before investing in high effort work.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="process__card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <div class="process__icon me-3">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Build</h5>
+                <span class="badge text-white">03</span>
+              </div>
+            </div>
+            <p class="mb-0">I can implement a clean, maintainable UI and any of its integrations. As well, I can use accessible patterns and responsive grids for all breakpoints.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="process__card h-100">
+            <div class="d-flex align-items-center mb-3">
+              <div class="process__icon me-3">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div>
+                <h5 class="mb-1">Iterate</h5>
+                <span class="badge text-white">04</span>
+              </div>
+            </div>
+            <p class="mb-0">I can collect feedback, measure outcomes, and make refinements that make the experience smoother for every new release.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE COMPANIES SECTION -->
   <section id="companies" class="companies">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold">Trusted by</h1>
+        <h1 class="display-3 fw-bold">Tools & Platforms I rely on</h1>
         <div class="heading-line mb-5"></div>
       </div>
     </div>
@@ -216,16 +286,18 @@
 
   <!-- THE TESTIMONIALS SECTION -->
   <section id="testimonials" class="testimonials">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#fff" fill-opacity="1"
-        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-      </path>
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,197.3C672,192,768,160,864,170.7C960,181,1056,235,1152,218.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
     <div class="container">
       <div class="row text-center text-white">
         <h1 class="display-3 fw-bold">Testimonials</h1>
         <hr style="width: 100px; height: 3px; " class="mx-auto">
-        <p class="lead pt-1">what our clients are saying</p>
+        <p class="lead pt-1 text-capitalize">what our clients are saying</p>
       </div>
 
       <div class="row align-items-center">
@@ -235,9 +307,7 @@
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  Works hard and is a diligent worker. Brings a positive energy to the workplace.
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -249,20 +319,18 @@
                 </p>
               </div>
               <div class="testimonials__picture">
-                <img src="images/testimonials/client-1.jpg" alt="client-1 picture" class="rounded-circle img-fluid">
+                <img src="images/testimonials/client-1.jpg" alt="Annile Kinney" class="rounded-circle img-fluid">
               </div>
               <div class="testimonials__name">
-                <h3>Patrick Muriungi</h3>
-                <p class="fw-light">CEO & founder</p>
+                <h3>Annile Kinney</h3>
+                <p class="fw-light">Manager</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  Great guy to be around, works hard and is always looking for ways to improve.
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -274,20 +342,18 @@
                 </p>
               </div>
               <div class="testimonials__picture">
-                <img src="images/testimonials/client-2.jpg" alt="client-2 picture" class="rounded-circle img-fluid">
+                <img src="images/testimonials/client-2.jpg" alt="Cameron Christenson" class="rounded-circle img-fluid">
               </div>
               <div class="testimonials__name">
-                <h3>Joy Marete</h3>
-                <p class="fw-light">Finance Manager</p>
+                <h3>Cameron Christenson</h3>
+                <p class="fw-light">Coworker</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="testimonials__card">
                 <p class="lh-lg">
                   <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
+                  Goofy guy but is enjoyable to be around.
                   <i class="bi bi-blockquote-right"></i>
                 <div class="ratings p-1">
                   <i class="bi bi-star"></i>
@@ -299,36 +365,11 @@
                 </p>
               </div>
               <div class="testimonials__picture">
-                <img src="images/testimonials/client-3.jpg" alt="client-3 picture" class="rounded-circle img-fluid">
+                <img src="images/testimonials/client-3.jpg" alt="DJ Ellis" class="rounded-circle img-fluid">
               </div>
               <div class="testimonials__name">
-                <h3>ClaireBelle Zawadi</h3>
-                <p class="fw-light">Global brand manager</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="testimonials__card">
-                <p class="lh-lg">
-                  <i class="bi bi-blockquote-left"></i>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae.
-                  Distinctio.
-                  <i class="bi bi-blockquote-right"></i>
-                <div class="ratings p-1">
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                  <i class="bi bi-star"></i>
-                </div>
-                </p>
-              </div>
-              <div class="testimonials__picture">
-                <img src="images/testimonials/client-4.jpg" alt="client-4 picture" class="rounded-circle img-fluid">
-              </div>
-              <div class="testimonials__name">
-                <h3>Uhuru Kenyatta</h3>
-                <p class="fw-light">C.E.O & Founder</p>
+                <h3>DJ Ellis</h3>
+                <p class="fw-light">Coworker</p>
               </div>
             </div>
           </div>
@@ -343,11 +384,13 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#fff" fill-opacity="1"
-        d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L48,117.3C96,139,192,181,288,197.3C384,213,480,203,576,176C672,149,768,107,864,122.7C960,139,1056,213,1152,224C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
   </section>
 
   <!-- THE FAQ SECTION -->
@@ -356,7 +399,7 @@
       <div class="row text-center">
         <h1 class="display-3 fw-bold text-uppercase">faq</h1>
         <div class="heading-line"></div>
-        <p class="lead">frequently asked questions, get knowledge befere hand</p>
+        <p class="lead">Here’s how I partner with teams and what to expect.</p>
       </div>
       <div class="row mt-5">
         <div class="col-md-12">
@@ -365,13 +408,13 @@
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Cum facilis quis quia modi ipsam unde fuga animi?
+                  What does your UX process look like?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et adipisci, suscipit doloremque dicta necessitatibus esse ea minus, aut officia nulla harum asperiores quis dolor aliquid a ut est soluta?
+                  I am able to break my work into small, testable steps. Where I pursue my goals, keep the flow of things, and continue with effective checks with my prototypes in order to have my code ready to go.
                 </div>
               </div>
             </div>
@@ -379,13 +422,13 @@
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                  How do you keep projects on schedule?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos excepturi amet nesciunt sunt recusandae enim! Repellat nam quo unde eligendi, ex cumque illum deserunt ratione rerum perspiciatis voluptatum voluptas.
+                  I set weekly goals, break my tasks into parts, and continually go over all reviews. Clear checkpoints make it easy to adjust the scope without sacrificing quality.
                 </div>
               </div>
             </div>
@@ -393,13 +436,13 @@
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Quaerat dolorem, eveniet hic natus iste velit?
+                  Do you only work on greenfield projects?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, perspiciatis ea eius laborum iste, fugiat molestias magni tenetur quidem assumenda quibusdam dignissimos vitae impedit maiores velit quae aspernatur voluptatibus aperiam.
+                  No. I’m comfortable jumping into existing codebases, stabilizing issues, and layering UX improvements without disrupting what’s already working.
                 </div>
               </div>
             </div>
@@ -407,13 +450,13 @@
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Fuga quasi voluptate possimus, eum ex iure sit placeat?
+                  Which tools do you prefer?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas officia consequuntur sapiente quis. Perferendis excepturi magnam autem blanditiis? At fugit, mollitia quo consequatur deserunt provident aspernatur. Provident, id corporis.
+                  Figma for design, VS Code for implementation, GitHub for versioning, and whichever other tools that the team I'd be working with already trusts. I learn quick and I am effective with what I do.
                 </div>
               </div>
             </div>
@@ -430,15 +473,15 @@
         <h1 class="display-3 fw-bold text-capitalize">Latest work</h1>
         <div class="heading-line"></div>
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro temporibus distinctio.
+          These are some of the projects that I have worked on or I am working on.
         </p>
       </div>
       <div class="row mt-5 mb-4 g-3 text-center">
         <div class="col-md-12">
           <button class="btn btn-outline-primary" type="button">All</button>
-          <button class="btn btn-outline-primary" type="button">websites</button>
-          <button class="btn btn-outline-primary" type="button">design</button>
-          <button class="btn btn-outline-primary" type="button">mockup</button>
+          <button class="btn btn-outline-primary" type="button">Coding</button>
+          <button class="btn btn-outline-primary" type="button">Security</button>
+          <button class="btn btn-outline-primary" type="button">Service</button>
         </div>
       </div>
 
@@ -449,8 +492,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 1</h4>
-                <p>category project</p>
+                <h4>HTML Knowledgeful</h4>
+                <p>Adept in the HTML language</p>
               </div>
             </div>
           </div>
@@ -461,8 +504,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 2</h4>
-                <p>category project</p>
+                <h4>CSS & SCSS skilled</h4>
+                <p>Incorporates these languages effectively</p>
               </div>
             </div>
           </div>
@@ -473,8 +516,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 3</h4>
-                <p>category project</p>
+                <h4>SQL Mastery</h4>
+                <p>Knowledgeful in data managing</p>
               </div>
             </div>
           </div>
@@ -485,8 +528,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 4</h4>
-                <p>category project</p>
+                <h4>ARIA implementation</h4>
+                <p>Aim to help those with disabilities</p>
               </div>
             </div>
           </div>
@@ -497,8 +540,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 5</h4>
-                <p>category project</p>
+                <h4>Network Security</h4>
+                <p>Understands Network layouts</p>
               </div>
             </div>
           </div>
@@ -509,8 +552,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 6</h4>
-                <p>category project</p>
+                <h4>Network Setup</h4>
+                <p>Can assemble basic physical networks</p>
               </div>
             </div>
           </div>
@@ -521,8 +564,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 7</h4>
-                <p>category project</p>
+                <h4>Computer Assembly</h4>
+                <p>Improves all parts of a computer</p>
               </div>
             </div>
           </div>
@@ -533,8 +576,8 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 8</h4>
-                <p>category project</p>
+                <h4>Team Contributer</h4>
+                <p>Worked in countless Team Projects</p>
               </div>
             </div>
           </div>
@@ -545,9 +588,85 @@
               class="img-fluid">
             <div class="portfolio-info">
               <div class="caption">
-                <h4>project name goes here 9</h4>
-                <p>category project</p>
+                <h4>Robot Builder</h4>
+                <p>Worked on Robotic Operations</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold">Skills & tools</h1>
+        <div class="heading-line mb-1"></div>
+        <p class="lead">Balanced UX thinking and hands-on implementation.</p>
+      </div>
+      <div class="row g-4 pt-4">
+        <div class="col-12 col-lg-6">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h5 class="text-uppercase text-muted mb-3">Capabilities</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <span>UX research & flows</span>
+                    <span class="text-muted">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Responsive UI engineering</span>
+                    <span class="text-muted">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <span>API integration</span>
+                    <span class="text-muted">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Code quality & refactoring</span>
+                    <span class="text-muted">88%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h5 class="text-uppercase text-muted mb-3">Toolbox</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tool-badge">Figma</span>
+                <span class="tool-badge">Bootstrap 5</span>
+                <span class="tool-badge">TypeScript/JS</span>
+                <span class="tool-badge">Node.js</span>
+                <span class="tool-badge">REST APIs</span>
+                <span class="tool-badge">Git & GitHub</span>
+                <span class="tool-badge">VS Code</span>
+                <span class="tool-badge">Notion</span>
+              </div>
+              <p class="mt-3 mb-0 text-muted">Always open to the best tool for the job and can process, and stay organized to achieve the best outcomes.</p>
             </div>
           </div>
         </div>
@@ -559,32 +678,31 @@
   <section id="contact" class="get-started">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
+        <h1 class="display-3 fw-bold text-capitalize">Get in touch</h1>
         <div class="heading-line"></div>
         <p class="lh-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero illum architecto modi.
+          Tell me what you need built, fixed, or improved and I’ll map a plan with clear milestones.
         </p>
       </div>
 
       <div class="row text-white">
         <div class="col-12 col-lg-6 gradient shadow p-3">
           <div class="cta-info w-100">
-            <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+            <h4 class="display-4 fw-bold">Organized and reliable collaboration</h4>
             <p class="lh-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias optio minima, tempore architecto
-              sint ipsam dolore tempora facere laboriosam corrupti!
+              I set realistic timelines, share progress early, and adjust based on feedback. You’ll always know what’s next.
             </p>
-            <h3 class="display-3--brief">What will be the next step?</h3>
+            <h3 class="display-3--brief">What happens next?</h3>
             <ul class="cta-info__list">
-              <li>We'll prepare the proposal.</li>
-              <li>we'll discuss it together.</li>
-              <li>let's start the discussion.</li>
+              <li>Tell me any changes you want me to make.</li>
+              <li>Make goals that you want me to achieve.</li>
+              <li>Get in contact and get updated with the progress.</li>
             </ul>
           </div>
         </div>
         <div class="col-12 col-lg-6 bg-white shadow p-3">
           <div class="form w-100 pb-2">
-            <h4 class="display-3--title mb-5">start your project</h4>
+            <h4 class="display-3--title mb-5">Reach out to me</h4>
             <form action="#" class="row">
               <div class="col-lg-6 col-md mb-3">
                 <input type="text" placeholder="First Name" id="inputFirstName"
@@ -630,8 +748,8 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a href="#" class="contact-box__info--title">801-626-1234</a>
-            <p class="contact-box__info--subtitle"> Mon-Fri 9am-6pm</p>
+            <a href="tel:3858880367" class="contact-box__info--title">385-888-0367</a>
+            <p class="contact-box__info--subtitle">Mon–Fri, 9a–6p MT</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
@@ -646,8 +764,8 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a href="#" class="contact-box__info--title">info@company.com</a>
-            <p class="contact-box__info--subtitle">Online support</p>
+            <a href="mailto:ajspicknall@gmail.com" class="contact-box__info--title">ajspicknall@gmail.com</a>
+            <p class="contact-box__info--subtitle">Fastest during business hours</p>
           </div>
         </div>
         <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
@@ -663,8 +781,8 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a href="#" class="contact-box__info--title">Salt Lake City, USA</a>
-            <p class="contact-box__info--subtitle">NY 10012, US</p>
+            <a href="#" class="contact-box__info--title">Kaysville, UT</a>
+            <p class="contact-box__info--subtitle">84037</p>
           </div>
         </div>
       </div>
@@ -676,8 +794,8 @@
           <div class="col-lg-12 col-md-6">
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-github"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/AJSpicknall" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/arnold-spicknall-b969072a8" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             <a href="#"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
@@ -687,41 +805,40 @@
     <div class="container mt-5">
       <div class="row text-white justify-content-center mt-3 pb-3">
         <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-          <h5 class="text-capitalize fw-bold">Company name</h5>
+          <h5 class="text-capitalize fw-bold">AJ Spicknall</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <p class="lh-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex obcaecati blanditiis reprehenderit ab
-            mollitia voluptatem consectetur?
+            UX designer focused on clarity, maintainability, and making products easier to use. I build responsive experiences and keep teams aligned with steady, transparent progress.
           </p>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">Products</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#portfolio">Concept case studies</a></li>
+            <li><a href="#services">UX services</a></li>
+            <li><a href="#process">Process outline</a></li>
+            <li><a href="#contact">Project inquiry</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">useful links</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="mailto:ajspicknall@gmail.com">Email</a></li>
+            <li><a href="https://github.com/AJSpicknall">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/arnold-spicknall-b969072a8">LinkedIn</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
           <h5 class="text-capitalize fw-bold">contact</h5>
           <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px;">
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
-            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="tel:3858880367">385-888-0367</a></li>
+            <li><a href="mailto:ajspicknall@gmail.com">ajspicknall@gmail.com</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Project form</a></li>
           </ul>
         </div>
       </div>
@@ -732,8 +849,7 @@
         <div class="row text-center text-white">
           <div class="col-12">
             <div class="footer-bottom__copyright">
-              &COPY; Copyright 2022 <a href="#">Company</a> | Created by <a href="http://codewithpatrick.com"
-                target="_blank">Name Goes Here</a>
+              &COPY; Copyright 2022 <a href="#">AJ Spicknall</a> | Crafted with care
             </div>
           </div>
         </div>

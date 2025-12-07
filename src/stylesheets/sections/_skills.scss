@@ -1,0 +1,37 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.skills {
+  padding: 4rem 0;
+  background-color: $white;
+
+  .card {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba($black, 0.06);
+  }
+
+  .list-group-item {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .progress {
+    height: 0.6rem;
+    background-color: $gray-200;
+
+    .progress-bar {
+      background: linear-gradient(90deg, $primary, $secondary);
+    }
+  }
+
+  .tool-badge {
+    background-color: rgba($secondary, 0.15);
+    color: $primary;
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
